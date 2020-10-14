@@ -9,23 +9,23 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid #08235c;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: #5a8aa0;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #5a8aa0;
 }
 
 .description{
   white-space: pre-wrap;
 }
 
-.time-block{
+.event-input{
   text-align: center;
   border-radius: 15px;
 }
@@ -39,7 +39,10 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed #08235c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .past {
@@ -58,14 +61,24 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-left: 1px solid #08235c;
+  border-radius: 15px;
+  background-color: #5a8aa0;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+  font-size: 25px;
+  transition: all .1s ease-in-out;
+  background-color: #08235c;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: #08235c
+}
+
+.lead {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 24px;
 }
