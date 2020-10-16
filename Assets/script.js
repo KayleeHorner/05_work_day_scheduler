@@ -14,17 +14,20 @@ function renderDate() {
 renderDate()
 
 // Change color based on time
-var currentTime = moment().hours();
-var textBlock = $(".event-input");
+var currentTime = moment().format("HH");
+
 
 function renderBg() {
-$(textBlock).addClass(".present");
-    if (currentTime > ".hour") {
-        $(textBlock).addClass(".future");
-    } else if (currentTime < ".hour") {
-        $(textBlock).addClass(".past");
+
+$("#" + currentTime).addClass("present");
+for (var i = 7; i < 18; i++) {
+    if (currentTime < i) {
+        $("#" + i).addClass("future");
+    } else if (currentTime > i) {
+        $("#" + i).addClass("past");
        
     }
+}
 }
 renderBg()
 
